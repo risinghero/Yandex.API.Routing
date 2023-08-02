@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFrameworks>netstandard2.0;netstandard2.1</TargetFrameworks>
+        <Version>1.0.0.0</Version>
+        <AssemblyName>Yandex.API.Routing</AssemblyName>
+        <PackageId>Yandex.API.Routing</PackageId>
+        <RootNamespace>Yandex.API</RootNamespace>
+        <Description>Unofficial implementation of yandex routing api.</Description>
+        <AutoIncrementPackageRevision>true</AutoIncrementPackageRevision>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageProjectUrl>
+            https://github.com/risinghero/Yandex.API.Routing
+        </PackageProjectUrl>
+        <RepositoryUrl>https://github.com/risinghero/Yandex.API.Routing</RepositoryUrl>
+        <Authors>RisingHeroMan</Authors>
+    </PropertyGroup>
+    <ItemGroup>
+        <None Include="..\README.md" Pack="true" PackagePath="\" />
+        <None Include="..\LICENSE" Pack="true" PackagePath="\" />
+    </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    </ItemGroup>
+
+</Project>
