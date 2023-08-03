@@ -23,8 +23,8 @@ var waypointOption = new Option<(decimal lat, decimal lon)[]>(
     foreach (var coord in coords)
     {
         var latlon = coord.Split(',');
-        var lon = decimal.Parse(latlon[0], CultureInfo.InvariantCulture);
-        var lat = decimal.Parse(latlon[1], CultureInfo.InvariantCulture);
+        var lat = decimal.Parse(latlon[0], CultureInfo.InvariantCulture);
+        var lon = decimal.Parse(latlon[1], CultureInfo.InvariantCulture);
         result.Add((lat, lon));
     }
     return result.ToArray();

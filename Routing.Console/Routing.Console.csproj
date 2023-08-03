@@ -6,11 +6,11 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Yandex.API.Routing\API.Routing\API.Routing.csproj" />
-  </ItemGroup>
     <ItemGroup>
         <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
         <PackageReference Include="System.CommandLine" Version="2.0.0-beta4.22272.1" />
+    </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\API.Routing\API.Routing.csproj" />
     </ItemGroup>
 </Project>

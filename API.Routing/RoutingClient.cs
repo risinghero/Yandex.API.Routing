@@ -52,7 +52,10 @@ namespace Yandex.API
             {
                 if (!isFirst)
                     resultUrl += "&";
-                resultUrl += key + "=" + HttpUtility.UrlEncode(collection[key]);
+                var value = collection[key];
+                if (key != "waypoints")
+                    value = HttpUtility.UrlEncode(value);
+                resultUrl += key + "=" + value;
                 isFirst = false;
             }
             var response = await client.GetAsync(resultUrl, cancellationToken);
